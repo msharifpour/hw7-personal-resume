@@ -1,0 +1,111 @@
+/* Color Palette
+#f2faf9 Light
+#262e2d Dark
+#BDE5E1 Primary
+#d7efed PrimaryLight
+#5f7371 PrimaryDark
+#F88767 Secondary
+#f99f85 SecondaryLight
+#c66c52 SecondaryDark
+*/
+
+:root {
+  --color-light: #f2faf9;
+  --color-dark: #394544;
+  --color-primary: #bde5e1;
+  --color-primary-light: #def2f0;
+  --color-primary-dark: #4c5c5a;
+  --color-secondary: #f88767;
+  --color-secondary-light: #f99f85;
+  --color-secondary-dark: #c66c52;
+}
+/* Global styles 
+------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: "Inter", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Domine", serif;
+  font-weight: 700;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  margin-top: 0;
+}
+a {
+  color: var(--color-secondary);
+}
+a:hover {
+  color: var(--color-secondary-light);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+}
+/* Header & Footer 
+------------------------------------*/
+header {
+  background-color: var(--color-primary);
+  color: var(--color-primary-dark);
+}
+header h1,
+header h2 {
+  margin: 0;
+}
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+}
+.column-wide {
+  width: 70%;
+  /* float: right; */
+  min-height: 225px;
+}
+.profile-img {
+  /* width: 300px; */
+  border-radius: 50%;
+  /* margin-right: 30px; */
+  /* float: left; */
+}
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
+}
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Work Experience
+------------------------------------*/
+section {
+  background-color: var(--color-primary-light);
+  margin: 20px 0;
+}
+
+/* Education
+------------------------------------*/
